@@ -48,7 +48,7 @@ def main():
     # check arg length - if not correct, print error and exit
     if len(sys.argv) != 2:
         print(f'{red} Usage: {sys.argv[0]} <url>')
-        sys.exit(-1)
+        sys.exit(1)
     # otherwise, call the delete_carlos() function with the url supplied as argument
     else:
         url = sys.argv[1]
